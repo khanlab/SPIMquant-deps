@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "SPIMquant-deps"
+version = "0.1.0"
+description = "Containerized Python dependencies for SPIMquant"
+readme = "README.md"
+license = "MIT"
+authors = [
+    "Ali Khan <alik@robarts.ca>"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+snakemake = ">=8.0.0"
+snakebids = ">=0.12.0"
+pulp = "<2.8.0"
+numpy = "^1.26.4"
+dask = "^2024.2.0"
+zarr = "^2.17.0"
+scipy = "^1.12.0"
+jupyterlab = "^4.1.1"
+matplotlib = "^3.8.3"
+scikit-image = "^0.22.0"
+scikit-learn = "^1.4.1.post1"
+seaborn = "^0.13.2"
+stardist = "^0.8.5"
+dask-image = "^2023.8.1"
+ome-zarr = "^0.8.3"
+ome-zarr-neuro = {git = "https://github.com/khanlab/ome-zarr-neuro", rev='main'}
+attrs = "22.2.0"
+sparse = "^0.15.1"
+pandas = "^2.2.2"
+
+[tool.poetry.scripts]
+spimquant = "spimquant.run:main"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
