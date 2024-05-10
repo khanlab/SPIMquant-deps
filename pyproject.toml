@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "SPIMquant-deps"
+name = "pythondeps"
 version = "0.1.0"
-description = "Containerized Python dependencies for SPIMquant"
+description = "Containerized python environment"
 readme = "README.md"
 license = "MIT"
 authors = [
