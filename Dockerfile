@@ -1,4 +1,4 @@
-FROM python:bullseye as python
+FROM python:3.11.8-bullseye as python
 
 
 # Stage: itksnap (built with Ubuntu16.04 - glibc 2.23)
